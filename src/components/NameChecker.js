@@ -11,6 +11,20 @@ class NameChecker extends Component {
         this.state = { matchingNames: false }
     }
 
+    checkUsernameOnDuo(){
+        axios.get(`http://www.duolingo.com/users/${this.state.gameName}`).then((response) => {
+            //no way to prevent redirects from client with axios - makes error handling difficult
+            if (response.status === 200) {
+                console.log("correct name", response)
+                this.setState({
+                    matchingNames: true
+                })
+            }
+        }).catch(error => {
+            console.log(error)
+        })
+    }
+
     componentDidMount() {
         if (web3) {
             web3.eth.getAccounts().then((userWeb3) => {
@@ -40,17 +54,16 @@ class NameChecker extends Component {
                 <div>
                     <p> Please change your DuoLingo username to: </p>
                     <div>
-                        <p style={{ backgroundColor: "#f7f7f9", padding: "15px", maxWidth: 200, margin: 'auto', borderRadius : 4 }}>{this.state.gameName}</p>
+                        <p style={{ backgroundColor: "#f7f7f9", padding: "15px", maxWidth: 200, margin: 'auto', borderRadius: 4 }}>{this.state.gameName}</p>
                     </div>
-
-
-                    <button style={{margin : "10px"}} type="button" className="btn btn-primary">Done</button>
+                    <button style={{ margin: "10px" }} type="button" className="btn btn-primary" onClick={this.checkUsernameOnDuo.bind(this)}>Done</button>
                 </div>
             }
             {this.state.matchingNames &&
-                <p> <Emoji symbol="✅" /> Your name matches your public key </p>
-
-
+                <div>
+                    <p> <Emoji symbol="✅" /> Your name matches your public key </p>
+                    <button style={{ margin: "10px" }} type="button" className="btn btn-primary" onClick={()=>(null)}>Create Game</button>
+                </div>
             }
         </div>
     }
