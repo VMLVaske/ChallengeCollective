@@ -12,7 +12,7 @@ In the end of the game the prize fund will be split with those who are left in t
 You can visit our slides here - https://docs.google.com/presentation/d/1Ue6emrV-B4yyUbhd4wzwrkMmUnTyzkBEVNFkqI0uOBg/edit?usp=sharing
 
 ## Authors
-Rachel Black - Frontend - PurpleBooth
-Valerie Vaske - Smart Contract - PurpleBooth
+* Rachel Black - Frontend - PurpleBooth
+* Valerie Vaske - Smart Contract - PurpleBooth
 
 
