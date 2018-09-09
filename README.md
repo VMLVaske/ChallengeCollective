@@ -3,7 +3,7 @@
 Challenge Collective
 Competetive, decentralized motivational SmartContract with a little gambling component
 
-*We want to incentive people to learn more and become their best self * Self improvement + Gambling + Social Competition
+**We want to incentive people to learn more and become their best self ** Self improvement + Gambling + Social Competition
 
 To play our game you simple need to join a Challenge Collective gaming pool, submit your ETH and hit your daily targets:
 
