@@ -10,7 +10,7 @@ To play our game you simple need to join a Challenge Collective gaming pool, sub
 
 if you miss your targets, the cash goes to the rest of the pool. 
 In the end of the game the prize fund will be split with those who are left in the game.
-You can visit our slides here - https://docs.google.com/presentation/d/1Ue6emrV-B4yyUbhd4wzwrkMmUnTyzkBEVNFkqI0uOBg/edit?usp=sharing
+[You can visit our slides here](https://docs.google.com/presentation/d/1Ue6emrV-B4yyUbhd4wzwrkMmUnTyzkBEVNFkqI0uOBg/edit?usp=sharing)
 
 [View our UI demo](https://challenge-collective.herokuapp.com/)
 
