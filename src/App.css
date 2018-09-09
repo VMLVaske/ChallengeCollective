@@ -1,10 +1,15 @@
 .App {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
+}
+
+.btn-primary{
+  background-color :  #4F859B;
 }
 
 .App-header {
